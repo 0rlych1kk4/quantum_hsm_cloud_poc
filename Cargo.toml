@@ -1,0 +1,21 @@
+[package]
+name = "quantum_hsm_cloud_poc"
+version = "0.1.0"
+edition = "2021"
+
+description = "Quantum Hardware Security Module (HSM) Cloud Service PoC"
+license = "MIT"
+authors = ["Orly"]
+repository = "https://github.com/orly/quantum_hsm_cloud_poc"
+
+[dependencies]
+pqcrypto = "0.6"
+pqcrypto-ntru = "0.6"
+rand = "0.8"
+tokio = { version = "1", features = ["full"] }
+warp = "0.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+async-trait = "0.1"
+reqwest = { version = "0.11", features = ["json"] }
+
